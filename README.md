@@ -1,4 +1,4 @@
-# Bootstrap 5 basic homepage
+# Bootstrap 5 Basic Homepage
 
 ### Simple homepage made by myself using Bootstrap 5
 
