@@ -79,7 +79,7 @@ const preencherFormulario = (endereço) => {
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
 const cepValido = (cep) => cep.length == 8 && eNumero(cep); 
-/* Digitos totais ou caso tenha letra (eNumero) de um CEP, caso contrario retorna error*/
+/*Digitos totais ou caso tenha letra (eNumero) de um CEP, caso contrario retorna error*/
 
 /*const pesquisarCep = async () => {
     limparFormulario();
