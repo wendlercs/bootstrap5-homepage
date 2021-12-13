@@ -11,7 +11,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Cadastro</title>
+    <title>Chart</title>
 </head>
 
 <body>
@@ -51,68 +51,87 @@
     </div>
     <!--HEADER/NAVBAR-->
 
-    <!--FORMULARIO-->
-    <div class="formulario block" id="formulario">
-        <div class="container">
+    <div class="grafico">
+        <div class="container block">
             <div class="row">
-                <div class="col-12 ">
-                    <div class="inputbox">
-                        <input type="text" id="nome" required>
-                        <label for="nome">Nome</label>
-                    </div>
-                    <div class="inputbox mt-5">
-                        <input type="text" id="email" required>
-                        <label for="email">Email</label>
-                    </div>
-
-                    <div class="row pt-5 col-12">
-                        <div class="inputbox">
-                            <input type="text" id="cep" required>
-                            <label for="cep">CEP</label>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" id="endereço" required>
-                            <label for="endereço">Endereço</label>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" id="numero" required>
-                            <label for="numero">Número</label>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5 col-12">
-                        <div class="inputbox">
-                            <input type="text" id="bairro" required>
-                            <label for="bairro">Bairro</label>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" id="cidade" required>
-                            <label for="cidade">Cidade</label>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" id="estado" required>
-                            <label for="estado">Estado</label>
-                        </div>
-                    </div>
+                <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+                    <img src="./assets/imgs/sobre.svg" class="img-fluid">
+                </div>
+                <div class="col-md-6 align-self-center mb-md-0 mb-4 order-md-2 order-1">
+                    <h2 class="title">
+                        Lorem ipsum dolor sit amet
+                    </h2>
+                    <h4 class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus quis eaque nostrum id maiores
+                        cum! Veniam
+                        provident est accusantium delectus hic, totam aperiam dicta quam cupiditate sequi recusandae
+                        optio
+                        exercitationem?
+                    </p>
                 </div>
             </div>
-            <div class="row pt-5">
-                <button class="rounded-pill">Salvar</button>
+
+            <h2 class="title text-center block">Serviços</h2>
+            <h4 class="subtitle text-center mb-4">Lorem, ipsum dolor</h4>
+            <!--static chart-->
+
+            <div class="chart block">
+                <div class="row">
+                    <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+                        <h2 class="title text-center">Lorem</h2>
+                        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                    </div>
+                    <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+                        <h2 class="title text-center">Lorem</h2>
+                        <canvas id="myChartCountry" style="width:100%;max-width:700px"></canvas>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--static chart-->
+
+            <div class="chart block">
+                <div class="row">
+                    <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+                        <h2 class="title text-center">Lorem</h2>
+                        <canvas id="InputChart" style="width:100%;max-width:700px"></canvas>
+                    </div>
+                    <!--
+                    <div class="col-md-6 text-center align-self-center order-md-1 order-2">
+                        <h2 class="title text-center">Lorem</h2>
+                        <canvas id="InputChart2" style="width:100%;max-width:700px"></canvas>
+                    </div>
+                    -->
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Insert data" name="cord">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
-    <!--FORMULARIO-->
 
     <!--RODAPÉ-->
     <footer class="position position-relative superblock pt-5">
         <div class="text-center text-white p-4" style="background-color: indigo;">
             © 2021 Copyright:
-            <a class="text-white" href="https://github.com/wendlercs" target="_blank"
-                rel="noreferrer noopener" style="text-decoration: none">WendlerCS
+            <a class="text-white" href="https://github.com/wendlercs" target="_blank" rel="noreferrer noopener"
+                style="text-decoration: none">WendlerCS
             </a>
         </div>
     </footer>
     <!--RODAPÉ-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -125,7 +144,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> !-->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/chart.js"></script>
 
 </body>
 
